@@ -1,6 +1,4 @@
 {
-    "identityPoolName": "publicvueauthcomp6994b8e7_identitypool_6994b8e7",
-    "allowUnauthenticatedIdentities": false,
     "resourceNameTruncated": "public6994b8e7",
     "userPoolName": "publicvueauthcomp6994b8e7_userpool_6994b8e7",
     "autoVerifiedAttributes": [
@@ -31,7 +29,7 @@
     "userpoolClientLambdaRole": "public6994b8e7_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
     "resourceName": "publicvueauthcomp6994b8e7",
-    "authSelections": "identityPoolAndUserPool",
+    "authSelections": "userPoolOnly",
     "authRoleArn": {
         "Fn::GetAtt": [
             "AuthRole",
@@ -44,7 +42,22 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
+    "useDefault": "manual",
     "userPoolGroupList": [],
-    "dependsOn": []
+    "dependsOn": [],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": "{}",
+    "hostedUI": true,
+    "hostedUIDomainName": "publicvueauthcomp3b7b54b6-3b7b54b6",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://alpha.biz/login/\"],\"LogoutURLs\":[\"https://alpha.biz/logout/\"]}",
+    "serviceName": "Cognito",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "breakCircularDependency": false,
+    "permissions": [],
+    "authProviders": []
 }

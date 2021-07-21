@@ -9,8 +9,8 @@
     "start": "yarn serve"
   },
   "dependencies": {
-    "@aws-amplify/ui-vue": "^0.2.8",
-    "aws-amplify": "^3.0.18",
+    "@aws-amplify/ui-vue": "^1.1.0",
+    "aws-amplify": "^4.2.0",
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
